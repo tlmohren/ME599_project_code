@@ -54,18 +54,8 @@ for j = 1:length(varParList)
     saveName = [saveName,computer,'_',datestr(datetime('now'), 30),'.mat'];
     save(  ['data',filesep, saveName]  ,'DataMat','SensMat','par')
     fprintf('Runtime = %g[s], Saved as: %s \n',[toc,saveName]) 
-    
-%     if mod(j, 100)==0,
-%         system('git pull');
-%         system('git add data/*.mat');
-%         system(sprintf('git commit * -m "pushing data from more runs %i"', j));
-%         system('git push');
-%     end;
+
 end
 %%
-% system('git pull');
-% system('git add data/*.mat');
-% system(sprintf('git commit * -m "pushing data from more runs %i"', j));
-% system('git push');
 
 save( ['data' filesep 'ParameterList_paperAnalysis.mat'], 'varParList','varParList_short', 'par')

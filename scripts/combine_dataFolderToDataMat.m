@@ -6,8 +6,8 @@ par.varParNames = fieldnames(varParList_short);
 par.rmodes = 25;
 
 %% 
-dataMatTot = zeros( length(varParList_short), par.rmodes + 10,par.iter);
-sensorMatTot = zeros( length(varParList_short), par.rmodes + 10, par.rmodes + 10,par.iter);
+dataMatTot = zeros( length(varParList_short), par.rmodes ,par.iter);
+sensorMatTot = zeros( length(varParList_short), par.rmodes , par.rmodes ,par.iter);
 
 saveNameCell = {};
 saveNameCount = 0;

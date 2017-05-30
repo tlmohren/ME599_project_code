@@ -167,9 +167,9 @@ end
     end
     
     
-    length_y = length(Y(:,1))
-    size_strainx1 = size(strainx1)
-    dxi_size = size(dxi)
+%     length_y = length(Y(:,1))
+%     size_strainx1 = size(strainx1)
+%     dxi_size = size(dxi)
     
     
     
