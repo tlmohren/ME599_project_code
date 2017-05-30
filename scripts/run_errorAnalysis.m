@@ -30,10 +30,10 @@ sensor_y = y(sensor_vec);
 
 %%
 % rad_list = [0.001,0.01,0.1];
-rad_list = [0.005,0.05,0.5];
+rad_list = [0.0005,0.005,0.05,0.5];
 tic 
 %     figure();
-[xG,yG] = meshgrid( -1.25:0.005:1.25,0:0.005:5);
+[xG,yG] = meshgrid( -1.25:0.0005:1.25,0:0.0005:5);
 count = 1;
 rad_mat = [];
 

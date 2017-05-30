@@ -3,7 +3,7 @@ clc;clear all;close all
 %% 
 load(['data' filesep 'ParameterList_paperAnalysis'])
 par.varParNames = fieldnames(varParList_short);
-par.rmodes = 30;
+par.rmodes = 25;
 
 %% 
 dataMatTot = zeros( length(varParList_short), par.rmodes + 10,par.iter);

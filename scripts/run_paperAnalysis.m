@@ -11,7 +11,8 @@ addpathFolderStructure()
 par = setParameters;
 [varParList,varParList_short] = setVariableParameters(par);
 par.varParNames = fieldnames(varParList);
-par.iter = 10;
+par.iter = 10;y
+
 
 %% Run simulation and Sparse sensor placement for combinations of 4 parameters, over a set number of iterations
 
