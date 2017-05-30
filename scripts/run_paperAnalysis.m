@@ -2,7 +2,7 @@
 % R23_analysis_set
 % Runs simulations and analysis for the paper Sparse wing sensors (...) 
 % TLM 2017
-%------------------------------
+%------------------------------o
 clear all, close all, clc
 addpathFolderStructure()
 
@@ -11,7 +11,7 @@ addpathFolderStructure()
 par = setParameters;
 [varParList,varParList_short] = setVariableParameters(par);
 par.varParNames = fieldnames(varParList);
-par.iter = 10;y
+par.iter = 10;
 
 
 %% Run simulation and Sparse sensor placement for combinations of 4 parameters, over a set number of iterations
@@ -37,7 +37,7 @@ for j = 1:length(varParList)
         [acc,sensors ] = sparseWingSensors( X,G, par);
 
 %         Store data in 3D matrix ----------------------------
-        q = length(sensors);
+        q = length(sensors)
         prev = length(find( DataMat(q, :) )  );
         DataMat(q, prev+1) = acc; 
         SensMat(q, 1:q,prev+1) = sensors ;    

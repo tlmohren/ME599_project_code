@@ -1,10 +1,10 @@
 % random gaussian check
-clc;clear all;close all
+% clc;clear all;close all
 
 x0=0;
 y0=0;
 
-rad = 1;
+rad = 0.1;
 A = 1;
 % x = -5:0.01:5;
 % y = x;

@@ -58,13 +58,13 @@ fig1 = figure('Position', [100, 100, 1000, 800]);
     
     end
     realNumbers = find(~isnan(meanVec)); 
-    b = plot(realNumbers,meanVec(realNumbers), col{j})
-%     a = shadedErrorBar(realNumbers, meanVec(realNumbers),stdVec(realNumbers),col{j},0.8);
+    b = plot(realNumbers,meanVec(realNumbers), col{j});
+    a = shadedErrorBar(realNumbers, meanVec(realNumbers),stdVec(realNumbers),col{j},0.8);
 
     legend_vec = [legend_vec,b];
 %% Error 
-dotcol = {'.b','.m','.g','.b','.m','.g'};  
-col = {'-b','-m','-g','-b','-m','-g'}; 
+dotcol = {'.b','.m','.g','.y','.m','.g'};  
+col = {'-b','-m','-g','-y','-m','-g'}; 
 %     j = 3
     for j = 1:size(noisy_Datamat,1)
 %         figure()
@@ -79,8 +79,8 @@ col = {'-b','-m','-g','-b','-m','-g'};
         end
         realNumbers = find(~isnan(meanVec)); 
 %         figure()
-        b = plot( realNumbers,meanVec(realNumbers), col{j})
-%         a = shadedErrorBar(realNumbers, meanVec(realNumbers),stdVec(realNumbers),col{j},0.8);
+        b = plot( realNumbers,meanVec(realNumbers), col{j});
+        a = shadedErrorBar(realNumbers, meanVec(realNumbers),stdVec(realNumbers),col{j},0.8);
     legend_vec = [legend_vec,b];
     end
 
